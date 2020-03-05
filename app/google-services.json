@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "413865828121",
+    "firebase_url": "https://parkingride-db1d6.firebaseio.com",
+    "project_id": "parkingride-db1d6",
+    "storage_bucket": "parkingride-db1d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413865828121:android:cf032cde4b6d67c873af88",
+        "android_client_info": {
+          "package_name": "com.example.image_fetch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413865828121-9bs8nlr68uoiv6jhgk7pg1uoqrfdkci6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.image_fetch",
+            "certificate_hash": "4cda57ee9f2b1666b20ead27dee50e69c83332ff"
+          }
+        },
+        {
+          "client_id": "413865828121-pivl3gd9gc3rjpqrsii3c9bvhste0o28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMlIzTfDYgznxrUmnF4O9bnlOSBx0HPXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413865828121-pivl3gd9gc3rjpqrsii3c9bvhste0o28.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
