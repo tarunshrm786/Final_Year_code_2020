@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".ParkingOwnerHomePage"
+    >
+
+    <EditText
+        android:id="@+id/etValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etValue"
+        android:layout_marginTop="24dp"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/btnFetch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSubmit"
+        android:text="Fetch" />
+
+    <TextView
+        android:id="@+id/tvValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnFetch"
+        android:gravity="center_horizontal"
+        android:textSize="16dp" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/title"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        android:hint="Enter Title"-->
+<!--        />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/address"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="180dp"-->
+<!--        android:hint="Enter Address"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:layout_marginTop="260dp"-->
+<!--        android:id="@+id/savebutton"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_marginLeft="90dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Save Data" />-->
+
+
+</RelativeLayout>

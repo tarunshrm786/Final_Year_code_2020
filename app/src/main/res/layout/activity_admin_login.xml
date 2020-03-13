@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/park1"
-    tools:context=".Login">
+    android:background="@drawable/park3"
+    tools:context=".AdminLogin">
+
 
     <ProgressBar
         android:id="@+id/progress"
@@ -20,13 +21,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:textSize="45dp"
+        android:text="Admin Login"
+        android:textSize="51dp"
         android:fontFamily="bold"
-        android:textColor="@color/greenGradient"
-        android:background="@drawable/rounded_button"
-        android:padding="10dp"
-        android:layout_marginLeft="120dp"
+        android:textColor="@color/colorOrange"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="90dp"
         />
 
@@ -36,11 +35,11 @@
         android:layout_height="40dp"
         android:hint="Email Address"
         android:background="@drawable/rounded_button"
-        android:textColor="@color/colorBlack"
+        android:textColor="@color/greenGradient"
         android:textColorHint="@color/colorBlack"
         android:inputType="textEmailAddress"
-        android:padding="10dp"
         android:layout_marginLeft="50dp"
+        android:padding="10dp"
         android:layout_marginTop="240dp"
         />
 
@@ -48,12 +47,12 @@
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:id="@+id/passwordlogin"
-        android:background="@drawable/rounded_button"
         android:hint="Password"
         android:padding="10dp"
-        android:textColor="@color/colorBlack"
+        android:textColor="@color/greenGradient"
         android:textColorHint="@color/colorBlack"
         android:inputType="textPassword"
+        android:background="@drawable/rounded_button"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="330dp"
         />
@@ -71,33 +70,18 @@
         android:padding="15dp"
         />
 
-    <Button
-        android:id="@+id/btn_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="490dp"
-        android:layout_marginLeft="110dp"
-        android:background="@null"
-        android:fontFamily="sans-serif"
-        android:text="Forget Password ?"
-        android:textColor="@color/greenGradient"
-        android:padding="20dp"
-        android:onClick="forget_password"
-        />
-
-    <Button
-        android:id="@+id/btn_registers"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="570dp"
-        android:layout_marginLeft="90dp"
-        android:background="@null"
-        android:text="New User Register here"
-        android:textColor="@color/greenGradient"
-        android:padding="20dp"
-        android:fontFamily="sans-serif"
-        android:onClick="register"
-        />
-
+<!--    <Button-->
+<!--        android:id="@+id/btn_back"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="490dp"-->
+<!--        android:layout_marginLeft="110dp"-->
+<!--        android:background="@null"-->
+<!--        android:fontFamily="sans-serif"-->
+<!--        android:text="Forget Password ?"-->
+<!--        android:textColor="@color/greenGradient"-->
+<!--        android:padding="20dp"-->
+<!--        android:onClick="forget_password"-->
+<!--        />-->
 
 </RelativeLayout>

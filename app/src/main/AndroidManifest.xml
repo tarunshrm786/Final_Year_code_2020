@@ -9,11 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Home_Page"></activity>
-        <activity android:name=".MainActivity"    android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".Reset_Password"    android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".Login"    android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".Splash"    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".Parkreg"></activity>
+        <activity android:name=".Park" />
+        <activity android:name=".ParkingOwnerHomePage" />
+        <activity android:name=".AdminHomePage" />
+        <activity android:name=".ParkingOwnerForgetPassword" />
+        <activity android:name=".AdminLogin" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Reset_Password"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Home_Page"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Modules"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Splash"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -11,14 +11,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class Login extends AppCompatActivity {
+public class AdminLogin extends AppCompatActivity {
+
 
     private EditText inputEmail, inputPassword;
     private FirebaseAuth auth;
@@ -39,7 +39,7 @@ public class Login extends AppCompatActivity {
 //        }
 
         // set the view now
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_admin_login);
 
 //        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
@@ -88,7 +88,7 @@ public class Login extends AppCompatActivity {
 
                 //authenticate user
                 auth.signInWithEmailAndPassword(email, password)
-                        .addOnCompleteListener(Login.this, new OnCompleteListener<AuthResult>() {
+                        .addOnCompleteListener(AdminLogin.this, new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 // If sign in fails, display a message to the user. If sign in succeeds
@@ -101,11 +101,11 @@ public class Login extends AppCompatActivity {
                                     if (password.length() < 6) {
                                         inputPassword.setError(getString(R.string.minimum_password));
                                     } else {
-                                        Toast.makeText(Login.this, getString(R.string.auth_failed), Toast.LENGTH_LONG).show();
+                                        Toast.makeText(AdminLogin.this, getString(R.string.auth_failed), Toast.LENGTH_LONG).show();
                                     }
                                 } else {
                                     progressBar.setVisibility(View.GONE);
-                                    Intent intent = new Intent(Login.this, Home_Page.class);
+                                    Intent intent = new Intent(AdminLogin.this, AdminHomePage.class);
                                     startActivity(intent);
                                     finish();
                                 }
@@ -113,17 +113,5 @@ public class Login extends AppCompatActivity {
                         });
             }
         });
-    }
-
-    public void forget_password(View view) {
-
-        Intent intent = new Intent(Login.this, Reset_Password.class);
-        startActivity(intent);
-    }
-
-    public void register(View view) {
-
-        Intent intent = new Intent(Login.this, MainActivity.class);
-        startActivity(intent);
     }
 }
