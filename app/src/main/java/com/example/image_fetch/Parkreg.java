@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,15 +14,20 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
 
 public class Parkreg extends AppCompatActivity {
 
     //  https://www.androidhive.info/2016/06/android-getting-started-firebase-simple-login-registration-auth/
 
-    private EditText inputEmail, inputPassword;
+    private EditText inputEmail, inputPassword, name,contact,dob;
     private Button btnSignIn, btnSignUp, btnResetPassword;
     private ProgressBar progressBar;
     private FirebaseAuth auth;
@@ -38,6 +44,11 @@ public class Parkreg extends AppCompatActivity {
         btnSignUp = (Button) findViewById(R.id.btn_log);
         inputEmail = (EditText) findViewById(R.id.email_log);
         inputPassword = (EditText) findViewById(R.id.passwordlog);
+
+        name = (EditText) findViewById(R.id.name);
+        contact = (EditText) findViewById(R.id.number);
+        dob = (EditText) findViewById(R.id.dob);
+
         progressBar = (ProgressBar) findViewById(R.id.progress);
 //        btnResetPassword = (Button) findViewById(R.id.btn_reset_password);
 //
@@ -97,6 +108,35 @@ public class Parkreg extends AppCompatActivity {
                                 }
                             }
                         });
+
+
+                //others fields store in real-time database
+
+                HashMap<String,Object> map = new HashMap<>();
+                map.put("name",name.getText().toString());
+                map.put("contact",contact.getText().toString());
+                map.put("dob",dob.getText().toString());
+
+                FirebaseDatabase.getInstance().getReference().child("ParkingOwner").push()
+                        .setValue(map)
+                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                Log.i("jfbvkj", "onComplete: ");
+                            }
+                        })
+                        .addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                Log.i("jfbvkj", "onFailure: "+e.toString());
+                            }
+                        }).addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        Log.i("jfbvkj", "onSuccess: ");
+                    }
+                });
+
 
             }
         });

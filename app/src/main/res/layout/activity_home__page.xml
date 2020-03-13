@@ -6,4 +6,1396 @@
     android:layout_height="match_parent"
     tools:context=".Home_Page">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/services"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parking Centers"
+            android:background="@color/colorWhite"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="10dp"
+            android:textSize="34dp"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#FF9800"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorWhite"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                android:layout_marginTop="100dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="392dp"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/park1"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/textViewName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:textSize="34dp"
+                            android:textColor="@color/colorWhite"
+                            android:text="Civil Line"
+                            android:background="@drawable/roundbtn"
+                            android:padding="8dp"
+                            android:fontFamily="sans-serif-black"
+                            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+                        <TextView
+                            android:id="@+id/textViewVersion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:text="Android Version"
+                            android:textColor="@color/colorWhite"
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:onClick="Book"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Book now"
+                                android:textColor="@color/colorWhite"
+                                android:background="@drawable/roundbtn"
+                                android:layout_marginLeft="130dp"
+                                android:layout_marginTop="30dp"
+                                android:fontFamily="sans-serif-black"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view2"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="5dp"
+                android:layout_marginTop="30dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/park2"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/textViewName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:textSize="34dp"
+                            android:text="High Court"
+                            android:background="@drawable/roundbtn"
+                            android:padding="8dp"
+                            android:textColor="@color/colorWhite"
+                            android:fontFamily="sans-serif-black"
+                            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+                        <TextView
+                            android:id="@+id/textViewVersion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:text="Android Version"
+                            android:textColor="@color/colorWhite"
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:onClick="Call"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Book now"
+                                android:textColor="@color/colorWhite"
+                                android:background="@drawable/roundbtn"
+                                android:layout_marginLeft="130dp"
+                                android:layout_marginTop="30dp"
+                                android:fontFamily="sans-serif-black"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view3"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="5dp"
+                android:layout_marginTop="30dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/park3"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/textViewName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:textSize="34dp"
+                            android:text="Katra"
+                            android:background="@drawable/roundbtn"
+                            android:padding="8dp"
+                            android:textColor="@color/colorWhite"
+                            android:fontFamily="sans-serif-black"
+                            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+                        <TextView
+                            android:id="@+id/textViewVersion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:text="Android Version"
+                            android:textColor="@color/colorWhite"
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:onClick="Call"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Book now"
+                                android:textColor="@color/colorWhite"
+                                android:background="@drawable/roundbtn"
+                                android:layout_marginLeft="130dp"
+                                android:layout_marginTop="30dp"
+                                android:fontFamily="sans-serif-black"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view2"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardElevation="5dp"
+                android:layout_marginTop="30dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/park1"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/textViewName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:textSize="34dp"
+                            android:text="PVR"
+                            android:background="@drawable/roundbtn"
+                            android:padding="8dp"
+                            android:textColor="@color/colorWhite"
+                            android:fontFamily="sans-serif-black"
+                            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+                        <TextView
+                            android:id="@+id/textViewVersion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:text="Android Version"
+                            android:textColor="@color/colorWhite"
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:onClick="Call"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Book now"
+                                android:textColor="@color/colorWhite"
+                                android:background="@drawable/roundbtn"
+                                android:layout_marginLeft="130dp"
+                                android:layout_marginTop="30dp"
+                                android:fontFamily="sans-serif-black"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/card_view"-->
+<!--                xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                card_view:cardBackgroundColor="@color/colorWhite"-->
+<!--                card_view:cardCornerRadius="10dp"-->
+<!--                card_view:cardElevation="5dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                card_view:cardUseCompatPadding="true">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:background="@mipmap/p1"-->
+<!--                    >-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="12dp"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:orientation="vertical"-->
+<!--                        >-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewName"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:textSize="34dp"-->
+<!--                            android:text="Photographer"-->
+<!--                            android:background="@drawable/roundbtn"-->
+<!--                            android:padding="8dp"-->
+<!--                            android:textColor="@color/colorWhite"-->
+<!--                            android:fontFamily="sans-serif-black"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceLarge"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewVersion"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:text="Android Version"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <Button-->
+<!--                                android:onClick="book"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Book now"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                android:background="@drawable/roundbtn"-->
+<!--                                android:layout_marginLeft="80dp"-->
+<!--                                android:layout_marginTop="30dp"-->
+<!--                                />-->
+
+<!--                            <Button-->
+<!--                                android:onClick="Call"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Call Us"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                android:background="@drawable/roundbtn"-->
+<!--                                android:layout_marginLeft="80dp"-->
+<!--                                android:layout_marginTop="30dp"-->
+<!--                                />-->
+
+<!--                        </LinearLayout>-->
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/card_view4"-->
+<!--                xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                card_view:cardBackgroundColor="@color/colorWhite"-->
+<!--                card_view:cardCornerRadius="10dp"-->
+<!--                card_view:cardElevation="5dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:layout_marginBottom="30dp"-->
+<!--                android:background="@drawable/roundbtn"-->
+<!--                android:padding="8dp"-->
+<!--                android:textColor="@color/colorWhite"-->
+<!--                android:fontFamily="sans-serif-black"-->
+<!--                card_view:cardUseCompatPadding="true">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:background="@mipmap/c1"-->
+<!--                    >-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="12dp"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:orientation="vertical"-->
+<!--                        >-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewName"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:textSize="34dp"-->
+<!--                            android:text="Catering"-->
+<!--                            android:textColor="@color/colorWhite"-->
+<!--                            android:background="@drawable/roundbtn"-->
+<!--                            android:padding="8dp"-->
+<!--                            android:fontFamily="sans-serif-black"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceLarge"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewVersion"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:text="Android Version"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <Button-->
+<!--                                android:onClick="book"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Book now"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                android:background="@drawable/roundbtn"-->
+<!--                                android:layout_marginLeft="80dp"-->
+<!--                                android:layout_marginTop="30dp"-->
+<!--                                />-->
+
+<!--                            <Button-->
+<!--                                android:onClick="Call"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Call Us"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                android:background="@drawable/roundbtn"-->
+<!--                                android:layout_marginLeft="80dp"-->
+<!--                                android:layout_marginTop="30dp"-->
+<!--                                />-->
+
+<!--                        </LinearLayout>-->
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/card_view5"-->
+<!--                xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                card_view:cardBackgroundColor="@color/colorWhite"-->
+<!--                card_view:cardCornerRadius="10dp"-->
+<!--                card_view:cardElevation="5dp"-->
+<!--                android:layout_marginBottom="50dp"-->
+<!--                card_view:cardUseCompatPadding="true">-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:background="@mipmap/rb1"-->
+<!--                    >-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="12dp"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:orientation="vertical"-->
+<!--                        >-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewName"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:textSize="34dp"-->
+<!--                            android:text="Royal Band"-->
+<!--                            android:textColor="@color/colorWhite"-->
+<!--                            android:background="@drawable/roundbtn"-->
+<!--                            android:padding="8dp"-->
+<!--                            android:fontFamily="sans-serif-black"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceLarge"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewVersion"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:text="Android Version"-->
+<!--                            android:textColor="@color/colorWhite"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <Button-->
+<!--                                android:onClick="book"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Book now"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                android:background="@drawable/roundbtn"-->
+<!--                                android:layout_marginLeft="80dp"-->
+<!--                                android:layout_marginTop="30dp"-->
+<!--                                />-->
+
+<!--                            <Button-->
+<!--                                android:onClick="Call"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Call Us"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                android:background="@drawable/roundbtn"-->
+<!--                                android:layout_marginLeft="80dp"-->
+<!--                                android:layout_marginTop="30dp"-->
+<!--                                />-->
+
+
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/card_view6"-->
+<!--                xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                card_view:cardBackgroundColor="@color/colorWhite"-->
+<!--                card_view:cardCornerRadius="10dp"-->
+<!--                card_view:cardElevation="5dp"-->
+<!--                android:layout_marginBottom="50dp"-->
+<!--                android:textColor="@color/colorWhite"-->
+<!--                android:background="@drawable/roundbtn"-->
+<!--                android:padding="8dp"-->
+<!--                android:fontFamily="sans-serif-black"-->
+<!--                card_view:cardUseCompatPadding="true">-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:background="@mipmap/mehndi"-->
+<!--                    >-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="12dp"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:orientation="vertical"-->
+<!--                        >-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewName"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:textSize="34dp"-->
+<!--                            android:text="Mehndi"-->
+<!--                            android:padding="8dp"-->
+<!--                            android:textColor="@color/colorWhite"-->
+<!--                            android:background="@drawable/roundbtn"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceLarge"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewVersion"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:text="Android Version"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <Button-->
+<!--                                android:onClick="book"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Book now"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                android:background="@drawable/roundbtn"-->
+<!--                                android:layout_marginLeft="80dp"-->
+<!--                                android:layout_marginTop="30dp"-->
+<!--                                />-->
+
+<!--                            <Button-->
+<!--                                android:onClick="Call"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Call Us"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                android:background="@drawable/roundbtn"-->
+<!--                                android:layout_marginLeft="80dp"-->
+<!--                                android:layout_marginTop="30dp"-->
+<!--                                />-->
+
+
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/card_view7"-->
+<!--                xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                card_view:cardBackgroundColor="@color/colorWhite"-->
+<!--                card_view:cardCornerRadius="10dp"-->
+<!--                card_view:cardElevation="5dp"-->
+<!--                android:layout_marginBottom="50dp"-->
+<!--                android:textColor="@color/colorWhite"-->
+<!--                android:background="@drawable/roundbtn"-->
+<!--                android:padding="8dp"-->
+<!--                android:fontFamily="sans-serif-black"-->
+<!--                card_view:cardUseCompatPadding="true">-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:background="@mipmap/pandal"-->
+<!--                    >-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="12dp"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:orientation="vertical"-->
+<!--                        >-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewName"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:textSize="34dp"-->
+<!--                            android:padding="8dp"-->
+<!--                            android:text="Pandal"-->
+<!--                            android:textColor="@color/colorWhite"-->
+<!--                            android:background="@drawable/roundbtn"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceLarge"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewVersion"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:text="Android Version"-->
+<!--                            android:textColor="@color/colorWhite"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <Button-->
+<!--                                android:onClick="book"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Book now"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                android:background="@drawable/roundbtn"-->
+<!--                                android:layout_marginLeft="80dp"-->
+<!--                                android:layout_marginTop="30dp"-->
+<!--                                />-->
+
+<!--                            <Button-->
+<!--                                android:onClick="Call"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Call Us"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                android:background="@drawable/roundbtn"-->
+<!--                                android:layout_marginLeft="80dp"-->
+<!--                                android:layout_marginTop="30dp"-->
+<!--                                />-->
+
+
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/card_view7"-->
+<!--                xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                card_view:cardBackgroundColor="@color/colorWhite"-->
+<!--                card_view:cardCornerRadius="10dp"-->
+<!--                card_view:cardElevation="5dp"-->
+<!--                android:layout_marginBottom="50dp"-->
+<!--                android:textColor="@color/colorWhite"-->
+<!--                android:background="@drawable/roundbtn"-->
+<!--                android:padding="8dp"-->
+<!--                android:fontFamily="sans-serif-black"-->
+<!--                card_view:cardUseCompatPadding="true">-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:background="@mipmap/cardecorate"-->
+<!--                    >-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="12dp"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:orientation="vertical"-->
+<!--                        >-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewName"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:textSize="34dp"-->
+<!--                            android:textColor="@color/colorWhite"-->
+<!--                            android:background="@drawable/roundbtn"-->
+<!--                            android:text="Car Decoration"-->
+<!--                            android:padding="8dp"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceLarge"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewVersion"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:text="Android Version"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <Button-->
+<!--                                android:onClick="book"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Book now"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                android:background="@drawable/roundbtn"-->
+<!--                                android:layout_marginLeft="80dp"-->
+<!--                                android:layout_marginTop="30dp"-->
+<!--                                />-->
+
+<!--                            <Button-->
+<!--                                android:onClick="Call"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Call Us"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                android:background="@drawable/roundbtn"-->
+<!--                                android:layout_marginLeft="80dp"-->
+<!--                                android:layout_marginTop="30dp"-->
+<!--                                />-->
+
+
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/card_view7"-->
+<!--                xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                card_view:cardBackgroundColor="@color/colorWhite"-->
+<!--                card_view:cardCornerRadius="10dp"-->
+<!--                card_view:cardElevation="5dp"-->
+<!--                android:layout_marginBottom="50dp"-->
+<!--                android:textColor="@color/colorWhite"-->
+<!--                android:background="@drawable/roundbtn"-->
+<!--                android:padding="8dp"-->
+<!--                android:fontFamily="sans-serif-black"-->
+<!--                card_view:cardUseCompatPadding="true">-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:background="@mipmap/beauty"-->
+<!--                    >-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="12dp"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:orientation="vertical"-->
+<!--                        >-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewName"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:textSize="34dp"-->
+<!--                            android:background="@drawable/roundbtn"-->
+<!--                            android:textColor="@color/colorWhite"-->
+<!--                            android:text="Beauty and Groom"-->
+<!--                            android:padding="8dp"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceLarge"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewVersion"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:text="Android Version"-->
+<!--                            android:textColor="@color/colorWhite"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <Button-->
+<!--                                android:onClick="book"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Book now"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                android:background="@drawable/roundbtn"-->
+<!--                                android:layout_marginLeft="80dp"-->
+<!--                                android:layout_marginTop="30dp"-->
+<!--                                />-->
+
+<!--                            <Button-->
+<!--                                android:onClick="Call"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Call Us"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                android:background="@drawable/roundbtn"-->
+<!--                                android:layout_marginLeft="80dp"-->
+<!--                                android:layout_marginTop="30dp"-->
+<!--                                />-->
+
+
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/card_view7"-->
+<!--                xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                card_view:cardBackgroundColor="@color/colorWhite"-->
+<!--                card_view:cardCornerRadius="10dp"-->
+<!--                card_view:cardElevation="5dp"-->
+<!--                android:layout_marginBottom="50dp"-->
+<!--                android:background="@drawable/roundbtn"-->
+<!--                android:padding="8dp"-->
+<!--                android:textColor="@color/colorWhite"-->
+<!--                android:fontFamily="sans-serif-black"-->
+<!--                card_view:cardUseCompatPadding="true">-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:background="@mipmap/weddingpandal"-->
+<!--                    >-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="12dp"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:orientation="vertical"-->
+<!--                        >-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewName"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:textSize="34dp"-->
+<!--                            android:text="Wedding Pandal"-->
+<!--                            android:background="@drawable/roundbtn"-->
+<!--                            android:padding="8dp"-->
+<!--                            android:textColor="@color/colorWhite"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceLarge"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewVersion"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:text="Android Version"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <Button-->
+<!--                                android:onClick="book"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Book now"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                android:background="@drawable/roundbtn"-->
+<!--                                android:layout_marginLeft="80dp"-->
+<!--                                android:layout_marginTop="30dp"-->
+<!--                                />-->
+
+<!--                            <Button-->
+<!--                                android:onClick="Call"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Call Us"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                android:background="@drawable/roundbtn"-->
+<!--                                android:layout_marginLeft="80dp"-->
+<!--                                android:layout_marginTop="30dp"-->
+<!--                                />-->
+
+
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/card_view7"-->
+<!--                xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                card_view:cardBackgroundColor="@color/colorWhite"-->
+<!--                card_view:cardCornerRadius="10dp"-->
+<!--                card_view:cardElevation="5dp"-->
+<!--                android:background="@drawable/roundbtn"-->
+<!--                android:padding="8dp"-->
+<!--                android:textColor="@color/colorWhite"-->
+<!--                android:fontFamily="sans-serif-black"-->
+<!--                android:layout_marginBottom="50dp"-->
+<!--                card_view:cardUseCompatPadding="true">-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:background="@mipmap/tourworld"-->
+<!--                    >-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="12dp"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:orientation="vertical"-->
+<!--                        >-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewName"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:textSize="34dp"-->
+<!--                            android:text="Tour Travel"-->
+<!--                            android:background="@drawable/roundbtn"-->
+<!--                            android:padding="8dp"-->
+<!--                            android:textColor="@color/colorWhite"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceLarge"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewVersion"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:text="Android Version"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <Button-->
+<!--                                android:onClick="book"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Book now"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                android:background="@drawable/roundbtn"-->
+<!--                                android:layout_marginLeft="80dp"-->
+<!--                                android:layout_marginTop="30dp"-->
+<!--                                />-->
+
+<!--                            <Button-->
+<!--                                android:onClick="Call"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Call Us"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                android:background="@drawable/roundbtn"-->
+<!--                                android:layout_marginLeft="80dp"-->
+<!--                                android:layout_marginTop="30dp"-->
+<!--                                />-->
+
+
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/card_view7"-->
+<!--                xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                card_view:cardBackgroundColor="@color/colorWhite"-->
+<!--                card_view:cardCornerRadius="10dp"-->
+<!--                card_view:cardElevation="5dp"-->
+<!--                android:background="@drawable/roundbtn"-->
+<!--                android:padding="8dp"-->
+<!--                android:textColor="@color/colorWhite"-->
+<!--                android:fontFamily="sans-serif-black"-->
+<!--                android:layout_marginBottom="50dp"-->
+<!--                card_view:cardUseCompatPadding="true">-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:background="@mipmap/music"-->
+<!--                    >-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="12dp"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:orientation="vertical"-->
+<!--                        >-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewName"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:textSize="34dp"-->
+<!--                            android:text="DJ Music"-->
+<!--                            android:background="@drawable/roundbtn"-->
+<!--                            android:padding="8dp"-->
+<!--                            android:textColor="@color/colorWhite"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceLarge"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewVersion"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:text="Android Version"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <Button-->
+<!--                                android:onClick="book"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Book now"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                android:background="@drawable/roundbtn"-->
+<!--                                android:layout_marginLeft="80dp"-->
+<!--                                android:layout_marginTop="30dp"-->
+<!--                                />-->
+
+<!--                            <Button-->
+<!--                                android:onClick="Call"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Call Us"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                android:background="@drawable/roundbtn"-->
+<!--                                android:layout_marginLeft="80dp"-->
+<!--                                android:layout_marginTop="30dp"-->
+<!--                                />-->
+
+
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/card_view7"-->
+<!--                xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                card_view:cardBackgroundColor="@color/colorWhite"-->
+<!--                card_view:cardCornerRadius="10dp"-->
+<!--                android:background="@drawable/roundbtn"-->
+<!--                android:padding="8dp"-->
+<!--                android:textColor="@color/colorWhite"-->
+<!--                android:fontFamily="sans-serif-black"-->
+<!--                card_view:cardElevation="5dp"-->
+<!--                android:layout_marginBottom="50dp"-->
+<!--                card_view:cardUseCompatPadding="true">-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:background="@mipmap/travel"-->
+<!--                    >-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="12dp"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:orientation="vertical"-->
+<!--                        >-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewName"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:textSize="34dp"-->
+<!--                            android:background="@drawable/roundbtn"-->
+<!--                            android:padding="8dp"-->
+<!--                            android:textColor="@color/colorWhite"-->
+<!--                            android:text="Car Bus service"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceLarge"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewVersion"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:text="Android Version"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <Button-->
+<!--                                android:onClick="book"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Book now"-->
+<!--                                android:padding="8dp"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                android:background="@drawable/roundbtn"-->
+<!--                                android:layout_marginLeft="80dp"-->
+<!--                                android:layout_marginTop="30dp"-->
+<!--                                />-->
+
+<!--                            <Button-->
+<!--                                android:onClick="Call"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Call Us"-->
+<!--                                android:padding="8dp"-->
+
+<!--                                android:background="@drawable/roundbtn"-->
+<!--                                android:layout_marginLeft="80dp"-->
+<!--                                android:layout_marginTop="30dp"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                />-->
+
+
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/card_view7"-->
+<!--                xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                card_view:cardBackgroundColor="@color/colorWhite"-->
+<!--                card_view:cardCornerRadius="10dp"-->
+<!--                card_view:cardElevation="5dp"-->
+<!--                android:background="@drawable/roundbtn"-->
+<!--                android:padding="8dp"-->
+<!--                android:textColor="@color/colorWhite"-->
+<!--                android:fontFamily="sans-serif-black"-->
+<!--                android:layout_marginBottom="50dp"-->
+<!--                card_view:cardUseCompatPadding="true">-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:background="@mipmap/cakepic"-->
+<!--                    >-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="12dp"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:orientation="vertical"-->
+<!--                        >-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewName"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:textSize="34dp"-->
+<!--                            android:background="@drawable/roundbtn"-->
+<!--                            android:text="Birthday Events"-->
+<!--                            android:padding="8dp"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceLarge"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/textViewVersion"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center_horizontal"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:textColor="@color/colorWhite"-->
+<!--                            android:text="Android Version"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <Button-->
+<!--                                android:onClick="cakeservice"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Services"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                android:background="@drawable/roundbtn"-->
+<!--                                android:layout_marginLeft="80dp"-->
+<!--                                android:layout_marginTop="30dp"-->
+<!--                                />-->
+
+<!--                            <Button-->
+<!--                                android:onClick="Call"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Call Us"-->
+<!--                                android:textColor="@color/colorWhite"-->
+<!--                                android:background="@drawable/roundbtn"-->
+<!--                                android:layout_marginLeft="80dp"-->
+<!--                                android:layout_marginTop="30dp"-->
+<!--                                />-->
+
+<!--                        </LinearLayout>-->
+
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+        </LinearLayout>
+    </ScrollView>
+
 </RelativeLayout>
