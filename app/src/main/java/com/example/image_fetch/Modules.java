@@ -17,15 +17,18 @@ public class Modules extends AppCompatActivity {
     public void customer_page(View view) {
         Intent intent = new Intent(Modules.this, Login.class);
         startActivity(intent);
+//        finish();
     }
 
     public void adminlogin(View view) {
         Intent intent = new Intent(Modules.this, AdminLogin.class);
         startActivity(intent);
+//        finish();
     }
 
     public void parkingown(View view) {
         Intent intent = new Intent(Modules.this, Park.class);
         startActivity(intent);
+//        finish();
     }
 }

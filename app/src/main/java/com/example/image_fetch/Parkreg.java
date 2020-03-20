@@ -144,5 +144,6 @@ public class Parkreg extends AppCompatActivity {
     public void parklog(View view) {
         Intent intent = new Intent(Parkreg.this, Park.class);
         startActivity(intent);
+//        finish();
     }
 }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/park3"
+    android:background="@drawable/lines"
     tools:context=".AdminLogin">
 
 
@@ -22,11 +22,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Admin Login"
-        android:textSize="40dp"
+        android:textSize="34dp"
         android:fontFamily="bold"
-        android:background="@drawable/rounded_button"
-        android:textColor="@color/colorOrange"
-        android:layout_marginLeft="65dp"
+        android:background="@drawable/roundbtn"
+        android:textColor="@color/colorWhite"
+        android:layout_marginLeft="74dp"
         android:padding="10dp"
         android:layout_marginTop="90dp"
         />
@@ -68,6 +68,7 @@
         android:background="@drawable/roundbtn"
         android:textSize="24dp"
         android:text="Login"
+        android:textColor="@color/colorWhite"
         android:fontFamily="sans-serif"
         android:padding="15dp"
         />
@@ -78,9 +79,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="485dp"
         android:layout_marginLeft="90dp"
-        android:background="@drawable/roundbtn"
+        android:background="@null"
         android:textSize="16dp"
         android:text="Forget Password ?"
+        android:textColor="@color/colorBlack"
         android:onClick="adminforgetpassword"
         android:fontFamily="sans-serif"
         android:padding="15dp"

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/lines2"
     tools:context=".Vechicle">
 
     <ProgressBar
@@ -22,8 +23,8 @@
         android:text="Vechcile Registeration"
         android:textSize="28dp"
         android:fontFamily="bold"
-        android:textColor="@color/greenGradient"
-        android:background="@drawable/rounded_button"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/roundbtn"
         android:padding="10dp"
         android:layout_marginLeft="45dp"
         android:layout_marginTop="90dp"
@@ -65,6 +66,7 @@
         android:layout_marginLeft="135dp"
         android:background="@drawable/roundbtn"
         android:textSize="24dp"
+        android:textColor="@color/colorWhite"
         android:text="register"
         android:fontFamily="sans-serif"
         android:padding="18dp"

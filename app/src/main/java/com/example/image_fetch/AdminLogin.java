@@ -118,5 +118,6 @@ public class AdminLogin extends AppCompatActivity {
     public void adminforgetpassword(View view) {
         Intent intent = new Intent(AdminLogin.this, Adminforgetpassword.class);
         startActivity(intent);
+//        finish();
     }
 }

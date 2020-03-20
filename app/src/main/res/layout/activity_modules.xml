@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/park1"
+    android:background="@drawable/lines2"
     tools:context=".Modules">
 
     <Button
@@ -16,6 +16,7 @@
         android:layout_marginLeft="130dp"
         android:layout_marginTop="200dp"
         android:padding="20dp"
+        android:textColor="@color/colorWhite"
         android:fontFamily="sans-serif"
         android:onClick="customer_page"
         />
@@ -25,6 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Admin"
+        android:textColor="@color/colorWhite"
         android:background="@drawable/roundbtn"
         android:layout_marginLeft="140dp"
         android:layout_marginTop="300dp"
@@ -42,6 +44,7 @@
         android:layout_marginLeft="115dp"
         android:layout_marginTop="400dp"
         android:padding="20dp"
+        android:textColor="@color/colorWhite"
         android:fontFamily="sans-serif"
         android:onClick="parkingown"
         />

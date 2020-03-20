@@ -1,92 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/lines"
     tools:context=".AdminHomePage">
 
-    <EditText
-        android:id="@+id/title"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="16dp"
-        android:hint="Title"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/description"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:ems="10"
-        android:hint="Decription"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title" />
-
-    <EditText
-        android:id="@+id/author"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:ems="10"
-        android:hint="Author"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/description" />
 
     <Button
-        android:textColor="@color/white"
-        android:background="@color/colorPrimary"
-        android:id="@+id/save"
-        android:layout_width="0dp"
+        android:id="@+id/customers"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="save"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/author" />
+        android:text="Customer Details"
+        android:background="@drawable/roundbtn"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="140dp"
+        android:padding="20dp"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="sans-serif"
+        android:onClick="customerdetails"
+        />
 
     <Button
-        android:textColor="@color/white"
-        android:background="@color/colorPrimary"
-        android:id="@+id/read"
-        android:layout_width="0dp"
+        android:id="@+id/parkowner"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="Read"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/save" />
+        android:text="Parking Owner Details"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/roundbtn"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="230dp"
+        android:padding="20dp"
+        android:fontFamily="sans-serif"
+        />
 
-    <TextView
-        android:textSize="16sp"
-        android:textColor="@color/colorPrimary"
-        android:id="@+id/text"
-        android:layout_width="0dp"
+    <Button
+        android:id="@+id/vechile"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:text=""
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/read" />
+        android:text="Vechile List"
+        android:background="@drawable/roundbtn"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="330dp"
+        android:padding="20dp"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="sans-serif"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment"
+        android:background="@drawable/roundbtn"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="430dp"
+        android:padding="20dp"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="sans-serif"
+        />
+
+</RelativeLayout>

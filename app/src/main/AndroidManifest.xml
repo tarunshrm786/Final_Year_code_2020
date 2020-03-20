@@ -9,18 +9,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Token"></activity>
+        <activity android:name=".AdminCustomerDetails"  android:parentActivityName=".AdminHomePage"></activity>
+        <activity
+            android:name=".Token"
+            android:parentActivityName=".Vechicle" />
         <activity android:name=".Adminforgetpassword" />
-        <activity android:name=".Vechicle" />
-        <activity android:name=".Parkreg" />
-        <activity android:name=".Park" />
+        <activity
+            android:name=".Vechicle"
+            android:parentActivityName=".Home_Page" />
+        <activity
+            android:name=".Parkreg"
+            android:parentActivityName=".Park" />
+        <activity
+            android:name=".Park"
+            android:parentActivityName=".Modules" />
         <activity android:name=".ParkingOwnerHomePage" />
-        <activity android:name=".AdminHomePage" />
+        <activity
+            android:name=".AdminHomePage"
+            android:parentActivityName=".AdminLogin" />
         <activity android:name=".ParkingOwnerForgetPassword" />
-        <activity android:name=".AdminLogin" />
+        <activity
+            android:name=".AdminLogin"
+            android:parentActivityName=".Modules" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:parentActivityName=".Modules" />
         <activity
             android:name=".Reset_Password"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
@@ -29,7 +42,7 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".Login"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:parentActivityName=".Modules" />
         <activity
             android:name=".Modules"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />

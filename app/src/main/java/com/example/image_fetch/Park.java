@@ -117,10 +117,12 @@ public class Park extends AppCompatActivity {
     public void reg(View view) {
         Intent intent = new Intent(Park.this, Parkreg.class);
         startActivity(intent);
+//        finish();
     }
 
     public void resetpass(View view) {
         Intent intent = new Intent(Park.this, ParkingOwnerForgetPassword.class);
         startActivity(intent);
+//        finish();
     }
 }
