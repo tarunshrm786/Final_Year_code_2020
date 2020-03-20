@@ -1,0 +1,207 @@
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<title>Admin</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+<style>
+
+</style>
+<body>
+          
+    <a href="customer.html">Customer</a>
+    <a href="vechile.html">Vechile</a>
+    
+ 
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!--<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>    -->
+    
+ <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>       
+
+
+</body>
+</html>
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+customer.html
+
+<!DOCTYPE html>
+<html lang="en">
+<title>Admin</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+<style>
+
+</style>
+<body>
+          
+         <form id="contactForm">
+        
+             <table class="table table-sm table-dark">
+  
+                 <tr>
+                     <td>
+                     Name
+                     </td> 
+                    <td>
+                     D.O.B
+                     </td> 
+                    <td>
+                     Mobile No.
+                     </td> 
+                      
+                 </tr>    
+                <tbody id="userlist">
+                    
+                 </tbody> 
+                 
+               </table>
+        
+            </form>
+ 
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!--<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>    -->
+    
+ <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>    
+
+    <script src="customer.js"></script>    
+
+
+</body>
+</html>
+----------------------------------------------------------------------
+
+customer.js
+
+
+var firebaseConfig = {
+    apiKey: "AIzaSyD2aN33AYbZgqIF1yghGlIjI_jZ_GjjLzE",
+    authDomain: "parkingride-db1d6.firebaseapp.com",
+    databaseURL: "https://parkingride-db1d6.firebaseio.com",
+    projectId: "parkingride-db1d6",
+    storageBucket: "parkingride-db1d6.appspot.com",
+    messagingSenderId: "413865828121",
+    appId: "1:413865828121:web:ea02d820c7026fdd73af88"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+
+var rootRef = firebase.database().ref().child("Customer");
+
+rootRef.on("child_added", snap => {
+    
+     var Name = snap.child("name").val();
+     var DOB = snap.child("dob").val();
+     var Mobile = snap.child("contact").val();
+
+$("#userlist").append("<tr><td>" + Name + "</td><td>" + DOB + "</td><td>" + Mobile +  "</td></tr>");
+});
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+vechile.html
+
+<!DOCTYPE html>
+<html lang="en">
+<title>Admin</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+<style>
+
+</style>
+<body>
+          
+         <form id="contactForm">
+        
+             <table class="table table-sm table-dark">
+  
+                 <tr>
+                     <td>
+                       Vechile Type
+                     </td> 
+                    <td>
+                    Vechile Number
+                     </td>
+                      
+                 </tr>    
+                <tbody id="userlist">
+                    
+                 </tbody> 
+                 
+               </table>
+        
+            </form>
+ 
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!--<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>    -->
+    
+ <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>    
+
+    <script src="vechile.js"></script>    
+
+
+</body>
+</html>
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+vechile.js
+
+var firebaseConfig = {
+    apiKey: "AIzaSyD2aN33AYbZgqIF1yghGlIjI_jZ_GjjLzE",
+    authDomain: "parkingride-db1d6.firebaseapp.com",
+    databaseURL: "https://parkingride-db1d6.firebaseio.com",
+    projectId: "parkingride-db1d6",
+    storageBucket: "parkingride-db1d6.appspot.com",
+    messagingSenderId: "413865828121",
+    appId: "1:413865828121:web:ea02d820c7026fdd73af88"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+
+var rootRef = firebase.database().ref().child("VechcileRegisteration");
+
+rootRef.on("child_added", snap => {
+    
+     var Vechiletype = snap.child("vechcilenumber").val();
+     var Vechilenumber = snap.child("vechciletype").val();
+
+$("#userlist").append("<tr><td>" + Vechiletype + "</td><td>" + Vechilenumber + "</td></tr>");
+});
+
+
