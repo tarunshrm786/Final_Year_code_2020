@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AdminCustomerDetails"  android:parentActivityName=".AdminHomePage"></activity>
+        <activity android:name=".AdminVechileDetails"   android:parentActivityName=".AdminHomePage"></activity>
+        <activity
+            android:name=".AdminCustomerDetails"
+            android:parentActivityName=".AdminHomePage" />
         <activity
             android:name=".Token"
             android:parentActivityName=".Vechicle" />
