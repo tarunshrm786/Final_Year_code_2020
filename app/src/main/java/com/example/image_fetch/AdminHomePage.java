@@ -43,4 +43,9 @@ public class AdminHomePage extends AppCompatActivity {
         Intent intent = new Intent(AdminHomePage.this, AdminCustomerDetails.class);
         startActivity(intent);
     }
+
+    public void vechiledetail(View view) {
+        Intent intent = new Intent(AdminHomePage.this, AdminVechileDetails.class);
+        startActivity(intent);
+    }
 }
