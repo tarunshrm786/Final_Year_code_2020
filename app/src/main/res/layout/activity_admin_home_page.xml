@@ -34,6 +34,7 @@
         android:layout_marginTop="230dp"
         android:padding="20dp"
         android:fontFamily="sans-serif"
+        android:onClick="park"
         />
 
     <Button
