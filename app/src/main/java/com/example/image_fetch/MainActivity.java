@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
 //        btnSignIn = (Button) findViewById(R.id.sign_in_button);
         btnSignUp = (Button) findViewById(R.id.btn_log);
+
         inputEmail = (EditText) findViewById(R.id.email_log);
         inputPassword = (EditText) findViewById(R.id.passwordlog);
 

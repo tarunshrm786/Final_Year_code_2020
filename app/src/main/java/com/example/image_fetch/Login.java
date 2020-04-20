@@ -54,6 +54,13 @@ public class Login extends AppCompatActivity {
         //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
 
+//        if (auth.getCurrentUser() != null)
+//        {
+//            finish();
+//            startActivity(new Intent(getApplicationContext(), Home_Page.class));
+//        }
+
+
 //        btnSignup.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
