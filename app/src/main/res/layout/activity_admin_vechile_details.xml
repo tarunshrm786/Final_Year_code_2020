@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".AdminVechileDetails">
 
-
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipelayout"
         android:layout_width="match_parent"
@@ -17,6 +16,7 @@
             android:layout_height="635dp"
             android:id="@+id/myWebView"
             />
+
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     <ProgressBar
@@ -27,6 +27,5 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="300dp"
         />
-
 
 </RelativeLayout>

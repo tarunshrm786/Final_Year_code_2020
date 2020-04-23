@@ -4,8 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorWhite"
     tools:context=".Token">
 
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Your Name"
+        />
 
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/mobileno"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="70dp"
+        android:hint="Enter Your Mobile Number"
+        />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/accountno"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="130dp"
+        android:hint="Enter Your Account Number"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/createbtn"
+        android:text="Payment"
+        android:padding="10dp"
+        android:background="@drawable/roundbtn"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="200sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="340dp"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorOrange"
+        android:text="Note: Take Screenshot of QR Code For verficiation at parking center entry."
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/qrcode"
+        android:layout_marginTop="350sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnhome"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Go to Home Page"
+        android:background="@drawable/roundbtn"
+        android:textColor="@color/colorWhite"
+        android:padding="10dp"
+        android:onClick="homepage"
+        />
 
 </RelativeLayout>

@@ -34,7 +34,7 @@
         android:id="@+id/vechciletype"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:hint="Vechcile Type"
+        android:hint="Vechcile Type Car/Bike"
         android:background="@drawable/rounded_button"
         android:textColor="@color/colorBlack"
         android:textColorHint="@color/colorBlack"
@@ -53,7 +53,7 @@
         android:padding="10dp"
         android:textColor="@color/colorBlack"
         android:textColorHint="@color/colorBlack"
-        android:inputType="number"
+        android:inputType="text"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="330dp"
         />
