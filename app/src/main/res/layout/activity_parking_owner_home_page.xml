@@ -10,5 +10,116 @@
     >
 
 
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Parking Owner Profile "
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="30dp"
+                android:layout_marginTop="1dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/User_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:hint="Name"
+                android:inputType="textCapSentences"
+                android:layout_below="@id/pro"
+                android:layout_margin="20dp"
+                android:textColor="@color/colorBlack"
+                />
+
+            <EditText
+                android:id="@+id/User_DOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:hint="Date of Birth(DD-MM-YYYY)"
+                android:inputType="textCapSentences"
+                android:layout_margin="20dp"
+                android:textColor="@color/colorBlack"
+                />
+            <EditText
+                android:id="@+id/User_Mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:hint="Mobile Number"
+                android:inputType="phone"
+                android:layout_below="@id/User_DOB"
+                android:layout_margin="20dp"
+                android:textColor="@color/colorBlack"
+
+                />
+            <EditText
+                android:id="@+id/User_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:hint="Address"
+                android:inputType="textCapSentences"
+                android:layout_below="@id/User_Mobile"
+                android:layout_margin="20dp"
+                android:textColor="@color/colorBlack"
+                />
+
+            <EditText
+                android:id="@+id/P_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:hint="Parking Center Name"
+                android:inputType="textCapSentences"
+                android:layout_below="@id/User_address"
+                android:layout_margin="20dp"
+                android:textColor="@color/colorBlack"/>
+            <EditText
+                android:id="@+id/Parking_space"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:hint="Available Parking Slot"
+                android:inputType="number"
+                android:layout_below="@id/P_Name"
+                android:layout_margin="20dp"
+                android:textColor="@color/colorBlack"
+                />
+            <EditText
+                android:id="@+id/P_charge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:hint="Parking Slot Charge Per Hour"
+                android:inputType="number"
+                android:layout_below="@id/Parking_space"
+                android:layout_margin="20dp"
+                android:textColor="@color/colorBlack"/>
+
+
+            <Button
+                android:id="@+id/Profile_submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT"
+                android:textAllCaps="true"
+                android:layout_below="@id/User_address"
+                android:textColor="@color/colorBlack"
+                android:layout_margin="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
 
 </RelativeLayout>
