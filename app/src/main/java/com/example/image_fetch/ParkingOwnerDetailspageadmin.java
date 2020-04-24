@@ -1,6 +1,5 @@
 package com.example.image_fetch;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
@@ -9,22 +8,12 @@ import android.graphics.Bitmap;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.renderscript.Sampler;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-
-public class Parkingownerdetails extends AppCompatActivity {
+public class ParkingOwnerDetailspageadmin extends AppCompatActivity {
 
     WebView webView;
     ProgressBar progressBar;
@@ -33,7 +22,7 @@ public class Parkingownerdetails extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_parkingownerdetails);
+        setContentView(R.layout.activity_parking_owner_detailspageadmin);
 
         progressBar = (ProgressBar)findViewById(R.id.progressbar);
         webView = (WebView)findViewById(R.id.myWebView);

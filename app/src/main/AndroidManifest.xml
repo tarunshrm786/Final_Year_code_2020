@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Parkingownerdetails"    android:parentActivityName=".AdminHomePage"></activity>
+        <activity android:name=".ParkingOwnerDetailspageadmin"          android:parentActivityName=".AdminHomePage"></activity>
+        <activity android:name=".Parking_payments"          android:parentActivityName=".AdminHomePage" />
+        <activity
+            android:name=".Parkingownerdetails"
+            android:parentActivityName=".AdminHomePage" />
         <activity
             android:name=".AdminVechileDetails"
             android:parentActivityName=".AdminHomePage" />

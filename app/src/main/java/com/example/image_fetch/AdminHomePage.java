@@ -53,4 +53,9 @@ public class AdminHomePage extends AppCompatActivity {
         Intent intent = new Intent(AdminHomePage.this, Parkingownerdetails.class);
         startActivity(intent);
     }
+
+    public void payments(View view) {
+        Intent intent = new Intent(AdminHomePage.this, Parking_payments.class);
+        startActivity(intent);
+    }
 }
